@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <meta charset="UTF-8">
+  <title>To-Do App</title>
+  <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Your todos</h1>
+    <div class="row">
+      <input value="C:/Users/danzig/Desktop/repozit/lands/rover-sneakers/ru" id="path" type="text">
+      <label for="path">Path to file</label>
+    </div>
+    <button id="addPath" class="btn">Add file</button>
+    <div id="strings" class="collection">
+
+    </div>
+    <button class="btn" id="complete">Готово!</button>
+  </div>
+</body>
+<input type="button" id="trigger-search" value="Search on document" />
+
+</html>
+
+
+<script>
+  require('./scripts/index.js')
+</script>
